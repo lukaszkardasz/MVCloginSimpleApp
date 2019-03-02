@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet (name = "giveCookie", urlPatterns = "/giveCookie")
 public class giveCookie extends HttpServlet {
 
-    public static final String COOKIE_NAME = "security-access";
+    public static final String COOKIE_NAME = "access";
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie cookie = new Cookie(COOKIE_NAME, "true");
