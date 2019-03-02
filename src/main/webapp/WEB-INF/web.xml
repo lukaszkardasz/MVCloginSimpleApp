@@ -1,0 +1,62 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+
+<!--dodajemy nazwe, klasę, mapowanie i pattern-->
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+  <!--servlety-->
+
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>pl.n2god.FirstServlet</servlet-class>
+    <init-param>
+      <param-name>test</param-name>
+      <param-value>25</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>first</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionTest</servlet-name>
+    <servlet-class>pl.n2god.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTest</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- filtr 1-->
+
+  <filter>
+    <filter-name>firstF</filter-name>
+    <filter-class>pl.n2god.FirstFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>firstF</filter-name>
+    <servlet-name>first</servlet-name>
+  </filter-mapping>
+
+  <!-- filtr 2-->
+
+  <filter>
+    <filter-name>secondF</filter-name>
+    <filter-class>pl.n2god.SecondFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>secondF</filter-name>
+    <servlet-name>first</servlet-name>
+  </filter-mapping>
+
+</web-app>
