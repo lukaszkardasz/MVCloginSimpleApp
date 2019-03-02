@@ -1,4 +1,4 @@
-package pl.n2god.login;
+package pl.Servlets.login;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

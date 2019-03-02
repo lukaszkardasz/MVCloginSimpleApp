@@ -1,4 +1,4 @@
-package pl.n2god.login;
+package pl.Servlets.login;
 
 public class User {
     private String login;

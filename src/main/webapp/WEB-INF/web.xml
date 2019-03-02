@@ -16,7 +16,7 @@
 
   <servlet>
     <servlet-name>first</servlet-name>
-    <servlet-class>pl.n2god.FirstServlet</servlet-class>
+    <servlet-class>pl.Servlets.FirstServlet</servlet-class>
     <init-param>
       <param-name>test</param-name>
       <param-value>25</param-value>
@@ -29,7 +29,7 @@
 
   <servlet>
     <servlet-name>SessionTest</servlet-name>
-    <servlet-class>pl.n2god.SessionServlet</servlet-class>
+    <servlet-class>pl.Servlets.SessionServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SessionTest</servlet-name>
@@ -41,7 +41,7 @@
 
   <filter>
     <filter-name>firstF</filter-name>
-    <filter-class>pl.n2god.FirstFilter</filter-class>
+    <filter-class>pl.Servlets.FirstFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>firstF</filter-name>
@@ -52,7 +52,7 @@
 
   <filter>
     <filter-name>secondF</filter-name>
-    <filter-class>pl.n2god.SecondFilter</filter-class>
+    <filter-class>pl.Servlets.SecondFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>secondF</filter-name>

@@ -1,4 +1,4 @@
-package pl.n2god.redirect;
+package pl.Servlets.redirect;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

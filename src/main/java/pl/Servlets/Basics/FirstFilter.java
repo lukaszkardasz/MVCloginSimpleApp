@@ -1,8 +1,7 @@
-package pl.n2god;
+package pl.Servlets;
 
 import org.apache.commons.lang.StringUtils;
 
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;

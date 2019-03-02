@@ -1,4 +1,4 @@
-package pl.n2god.redirect;
+package pl.Servlets.authorisationWithCookie;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,12 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
-@WebServlet (name = "SecondRedirectServlet", urlPatterns = "/redirect-target")
-public class SecondRedirectServlet extends HttpServlet {
+@WebServlet(name = "giveData", urlPatterns = "/give-me-data")
+public class takeCookie extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter writer = resp.getWriter();
-        writer.println("Servlet 2: action");
+        writer.println("Access with cookie - accepted!");
     }
 }

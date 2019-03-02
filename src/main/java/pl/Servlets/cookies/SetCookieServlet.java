@@ -1,4 +1,4 @@
-package pl.n2god.cookies;
+package pl.Servlets.cookies;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package pl.n2god.authorisationWithCookie;
+package pl.Servlets.authorisationWithCookie;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

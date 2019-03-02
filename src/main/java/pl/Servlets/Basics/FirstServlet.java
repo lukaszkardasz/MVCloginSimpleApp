@@ -1,4 +1,4 @@
-package pl.n2god;
+package pl.Servlets;
 
 
 import javax.servlet.ServletException;

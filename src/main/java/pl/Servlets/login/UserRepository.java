@@ -1,4 +1,4 @@
-package pl.n2god.login;
+package pl.Servlets.login;
 
 import java.util.ArrayList;
 import java.util.List;
