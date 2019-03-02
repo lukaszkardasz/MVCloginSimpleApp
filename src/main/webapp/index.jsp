@@ -7,15 +7,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dzisiaj jest:</title>
+    <title>Formularz logowania</title>
 </head>
 <body>
-    <h1>
+    <h4>
         Dzisiaj jest: <% out.println(java.time.LocalDate.now().toString());%>
-    </h1>
+    </h4>
+    <h1><b>Panel logowania</b></h1>
     <h2>
         <%--znacznik wyrażeń--%>
-        ${"tekst statyczny"}
+        <form action="/loginUser" method="post">
+            <input type="text" name="login" value="enter login">
+            <input type="password" name="password">
+            <input type="submit" value="Loguj">
+        </form>
     </h2>
 </body>
 </html>

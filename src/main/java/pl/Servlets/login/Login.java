@@ -28,9 +28,6 @@ public class Login extends HttpServlet {
             UserRepository userRepository = new UserRepository();
             Optional<User> optUser = userRepository.getUserByLoginData(login, password);
 
-
-
-
             if (optUser.isPresent()) {
                 session.setAttribute("user", optUser.get()); //przypisanie usera do sesji
                 writer.println("Zostałeś zalogowany jako: " + optUser.get().getLogin());
